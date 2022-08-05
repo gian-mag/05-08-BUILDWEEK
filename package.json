@@ -40,5 +40,9 @@
     "json-server": "^0.16.3",
     "json-server-auth": "^2.0.2",
     "concurrently": "^6.0.0"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.",
+  "main": "karma.conf.js",
+  "author": "",
+  "license": "ISC"
 }

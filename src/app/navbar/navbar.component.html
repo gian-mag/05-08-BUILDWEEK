@@ -1,0 +1,13 @@
+<ul>
+  <div class="sinistra">
+    <li><a [routerLink]="['/users']">User</a></li>
+  </div>
+    <div class="destra">
+    <li><a [routerLink]="['/']">HOME</a></li>
+    <li><a [routerLink]="['/login']" *ngIf="!isLogged">LOGIN</a></li>
+    <li><a [routerLink]="['/signup']" *ngIf="!isLogged">SIGNUP</a></li>
+    <li><a [routerLink]="['/genres']" *ngIf="!isLogged">GENERI</a></li>
+    <li><a [routerLink]="['/favorites']" *ngIf="isLogged">FAVORITI</a></li>
+    <li><button type="button" (click)="logout()" [routerLink]="['/']"  *ngIf="isLogged">logout</button></li>
+  </div>
+</ul>

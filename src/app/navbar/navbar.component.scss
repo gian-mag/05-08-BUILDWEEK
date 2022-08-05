@@ -1,0 +1,35 @@
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 7vh;
+  background-color: purple;
+  color: white;
+  div.sinistra{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  div.destra {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      margin-left: .5rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+}

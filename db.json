@@ -1,5 +1,18 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "123@123.123",
+      "password": "$2a$10$/efT6O3Ez8weDikfO3did.JyQuYy3eUXfpDVn1ghFTqR7ST.REdZW",
+      "name": "giando",
+      "id": 1
+    },
+    {
+      "email": "111@111.111",
+      "password": "$2a$10$HVRT37p/DAusivms/kPsN.SmOw6TgIKRpiXBOBO69ZZtBarx7R22i",
+      "name": "ciaone",
+      "id": 2
+    }
+  ],
   "favorites": [
     {
       "movieId": 567189,
@@ -12,12 +25,12 @@
       "id": 2
     },
     {
-      "movieId": 567189,
+      "movieId": 460465,
       "userId": 1,
       "id": 3
     },
     {
-      "movieId": 578701,
+      "movieId": 632357,
       "userId": 1,
       "id": 4
     }

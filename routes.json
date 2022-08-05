@@ -3,7 +3,10 @@
   "/movie/popular": "/movies-popular",
   "/movie/popular/:id": "/movies-popular/:id",
   "/movie/top_rated": "/movies-toprated",
+  "/movie/favorites": "/favorites",
+  "/movie/favorites/:movieId/:userId": "/favorites?userId=:userId&movieId=:movieId",
   "/reset": "/reset",
   "movies-popular": 660,
-  "movies-toprated": 660
+  "movies-toprated": 660,
+  "favorites": 660
 }

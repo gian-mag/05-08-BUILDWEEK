@@ -1,0 +1,10 @@
+
+<form [formGroup]="form" (ngSubmit)="login()">
+  <input type="text" formControlName="name" placeholder="nome">
+  <input type="email" name="email" placeholder="email" formControlName="email">
+  <input type="password" formControlName="password" placeholder="password">
+  <button type="submit">SignUp</button>
+</form>
+<div *ngIf="error">
+  <h2>Registrazione fallita!</h2>
+</div>
