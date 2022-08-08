@@ -14,12 +14,17 @@ export class MovielistComponent implements OnInit {
 
   sub!: Subscription;
 
+
+
   constructor(private card$: CardserviceService) { }
 
   ngOnInit(): void {
-    this.card$.arrayLikedGet();
+
+    this.card$.arrayMoviesGet();
     this.sub = this.card$.obs.subscribe((res)=>{
-    this.cards = res
+
+    this.cards = res;
+
     console.log(this.cards)})
   }
 

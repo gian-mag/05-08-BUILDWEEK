@@ -15,6 +15,7 @@ export class FavouritesComponent implements OnInit {
   constructor(private card$: CardserviceService, private auth$: AuthserviceService) { }
 
   ngOnInit(): void {
+    this.card$.arrayLikedGet();
     this.favCards = this.card$.getArrayLiked(this.auth$.userId)
     console.log(this.favCards)
   }

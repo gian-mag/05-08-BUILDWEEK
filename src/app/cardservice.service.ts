@@ -22,7 +22,6 @@ export class CardserviceService {
   obsFav = this.subFav.asObservable();
 
 
-
   constructor(private http: HttpClient) {
 
   }
@@ -37,19 +36,24 @@ export class CardserviceService {
     return this.favResults;
   }
 
-  arrayLikedGet() {
+  arrayMoviesGet() {
+
     this.http.get<Card[]>(this.url + "movies-popular").subscribe((posts) => {
       console.log(posts, "stringa")
       this.arrayMovies = posts;
       this.sub.next(this.arrayMovies)
+
     })
+
   }
-  arrayMoviesGet() {
+  arrayLikedGet() {
     this.http.get<any[]>(this.url + "favorites").subscribe((posts) => {
-      console.log(posts, "stringa2")
+      console.log(posts, "stringa2");
       this.arrayLiked = posts;
       this.subFav.next(this.arrayLiked)
     })
+
+
   }
 
 }

@@ -40,8 +40,9 @@ export class LoginComponent implements OnInit {
       this.auth$.login(this.form.value)
       console.log(this.form.value)
       this.error = false;
-      this.card$.arrayLikedGet();
+
       this.card$.arrayMoviesGet();
+      this.card$.arrayLikedGet();
     }
 
   }

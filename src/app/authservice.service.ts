@@ -25,7 +25,7 @@ export class AuthserviceService {
   // -2 se trovo il mio utente allora logged == true,
   // -3 altrimenti false
     this.authObs.subscribe((res)=> {
-      this.logged = res ? true : false
+      this.logged = res ? true : false;
     })
   }
 
@@ -41,8 +41,11 @@ export class AuthserviceService {
       this.http.post<AuthResponse>(this.url + "login", user).subscribe((res) => {
         console.log("login OK");
         localStorage.setItem("token", res.accessToken);
+
         this.authSub.next(res.user);
-        this.userId = res.user.id
+        this.userId = res.user.id;
+        /* localStorage.setItem("log", this.logged.toString()); */
+        localStorage.setItem("id", this.userId.toString());
       })
 
   }
@@ -63,4 +66,11 @@ export class AuthserviceService {
       return false
     }
   }
+
+  /* stillLogged() : boolean {
+    let t = localStorage.getItem("token");
+    if(t) {
+
+    }
+  } */
 }
